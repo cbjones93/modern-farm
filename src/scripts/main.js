@@ -26,3 +26,17 @@ console.log (soybeanSeed)
 import { createSunflower } from "./seeds/sunflower.js"
 const sunflowerSeed = createSunflower()
 console.log (sunflowerSeed)
+
+import { usePlants } from "./field.js"
+import { addPlant } from "./field.js"
+
+createCorn();
+createAsparagus();
+createPotato();
+
+addPlant(createPotato);
+addPlant(createAsparagus);
+addPlant(createCorn);
+
+let testCode = usePlants();
+console.log(testCode);
